@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+
+/* Medium devices (desktops, 768px and up) 
+@media (min-width: @screen-md-min) {
+*/
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) 
+@media (min-width: @screen-md-min) {
+*/
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) 
+@media (min-width: @screen-lg-min) {
+*/
+@media only screen and (min-width: 1200px) {
+	#innerTop{min-height:30px; background-color:rgb(48,48,48);border-radius:0px;margin-bottom:0px;padding-top:4px;color:rgb(157,157,157);}
+	#innerTop #innerMenuList {float:none;width:400px;margin:0 auto;}
+	#innerTop ul li, #topMenuList ul li{width: 100px;text-align:center;}
+	
+	
+	#mainContent #mainTop{height:769px;text-align:center;}
+	#mainContent #mainTop #myInfo{width:254px;height:769px;background-color:white;}
+	#mainContent #mainTop #mainTopContents{width:886px;height:769px;}
+	#mainContent #mainTop #mainTopContents ul li{float:left;}
+	#mainContent #mainTop #mainTopContents ul li ul li{float:none;}
+	
+	#mainContent #mainBottom ul li{float:left;text-align:center;}
+	
+	.content-cover{position: relative; background-color:#fff; opacity:.5;display:none;}
+	
+	.cover-style1{width:500px;height:500px;margin-top:-500px;}
+	.cover-style2{width:386px;height:250px;margin-top:-250px;}
+	.cover-style3{width:500px;height:269px;margin-top:-269px;}
+	.cover-style4{width:193px;height:269px;margin-top:-269px;}
+	
+	.cover-style5{width:254px;height:231px;margin-top:-231px;}
+	.cover-style6{width:250px;height:231px;margin-top:-231px;}
+	.cover-style7{width:385px;height:231px;margin-top:-231px;}
+	.cover-style8{width:504px;height:383px;margin-top:-383px;}
+	.cover-style9{width:250px;height:269px;margin-top:-269px;}
+	.cover-style10{width:250px;height:114px;margin-top:-114px;}
+	.cover-style11{width:385px;height:269px;margin-top:-269px;}
+	.cover-style12{width:385px;height:114px;margin-top:-114px;}
+	.cover-style13{width:193px;height:231px;margin-top:-231px;}
+	
+	
+	.cover-color-pink{background-color:#ea0465;}
+	.cover-color-mint{background-color:#7dd5c9;}
+	.cover-color-blue{background-color:#101e38;}
+}

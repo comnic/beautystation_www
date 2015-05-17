@@ -1,0 +1,4 @@
+@charset "UTF-8";
+
+#productList{background-color:#fff;border:#9d9d9d 1px solid;padding-left:20px;}
+#productList table tbody tr td .catName{font-size:10px;}

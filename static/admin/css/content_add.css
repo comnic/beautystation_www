@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+#contentAdd{background-color:#fff;border:#9d9d9d 1px solid;padding:20px;}
+#relative_list ul li{float:left;padding:5px;}
+#lyrProductList{min-height:300px;overflow:auto;}
+#popProductList li {float:left;padding:5px;}
+#popProductList li img:hover {border:1px #ea0465 solid;}
+.select-product {border:1px #ea0465 solid;}
+
+.delRelativeProduct{position:relative; top:-105px; left:70px;}

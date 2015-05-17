@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/********************************************************************************************
+ Medium devices (desktops, 768px and up) 
+ @media (min-width: @screen-md-min) {
+********************************************************************************************/
+@media only screen and (min-width: 768px) {
+
+	
+}
+
+/********************************************************************************************
+ Medium devices (desktops, 992px and up) 
+ @media (min-width: @screen-md-min) {
+********************************************************************************************/
+@media only screen and (min-width: 992px) {
+
+
+	
+}
+
+/********************************************************************************************
+ Large devices (large desktops, 1200px and up) 
+ @media (min-width: @screen-lg-min) {
+********************************************************************************************/
+@media only screen and (min-width: 1200px) {
+	#loginLogo { padding-bottom: 60px;}
+	#btnLogin { background-color: #ea0465; color: #fff; padding: 5px 20px 5px 20px;margin-bottom: 2px;}
+	#btnJoin { background-color: #303030; color: #fff; padding: 5px 20px 5px 20px; margin-top: 10px;}
+	
+	#loginForm {margin-top: 2px; display: none;}
+	#loginFormEmail {height: 105px;}
+	#loginFormEmail input { border: none; background-color: #efefef; -webkit-box-shadow: none; box-shadow: none;}
+	#loginFormEmail .divider {height:1px; width: 90%; margin:0 auto; background-color: #e3e3e3;}
+	#loginFormEmail #btnSubmit {background-color: #9b9b9b; color: #fff; height: 70px; font-size: 18px;}
+
+	#socialLoginForm ul li{border: 1px solid #e3e3e3; color: #9b9b9b; margin-bottom: 2px;}
+	
+}

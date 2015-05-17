@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+
+.box {background-color:#fff; border: 1px solid #efefef; overflow: hidden; padding: 10px;}
+.box-fill {background-color:#fff; border: 1px solid #efefef; overflow: hidden;}
+.box1 { height: 93px; }
+.box2 { height: 300px; }
+.box3 { height: 186px; }
+.box4 { height: 254px; }
+.box5 { height: 127px; }
+.box6 { height: 190px; }
+.box7 { height: 95px; }
+.box8 { height: 110px; }
+.box9 { height: 475px; }
+.box10 { height: 285px; }
+.box11 { height: 486px; }
+
+.box1 img { width: 95px; height:95px; }
+.con-movie .pic { height: 155px; overflow: hidden; }
+.con-movie .title { font-weight: bold; margin: 0 0 5px 0;}
+.con-movie .desc { margin-top: 10px; overflow: hidden;}
+
+.con-movie-lg .pic { height: 470px; overflow: hidden; }
+.con-movie-lg .title { font-weight: bold; margin: 0 0 5px 0;}
+.con-movie-lg .desc { position:relative; top:-130px; left:190px; width: 270px; height: 115px; overflow: hidden; padding: 10px 0px 0px 10px; background-color: #ea0465;opacity: .8;color:#fff;}
+.con-movie-lg .wish-box { position:relative; top: -245px; left: -10px;}
+
+.con-movie-sm .pic { height: 110px; overflow: hidden; }
+.con-movie-sm .title { font-weight: bold; margin: 0 0 5px 0;}
+.con-movie-sm .desc { margin-top: 10px; font-size: 10px;}
+
+.con-product { }
+.con-product div { float: left;}
+.con-product .pic { width: 50%; height: 168px; overflow: hidden;  }
+.con-product .desc { width: 50%; height: 168px; overflow: hidden; font-size: 10px; padding: 20px 0px 0px 10px; }
+.con-product .desc .brand {font-weight: bold;}
+
+.con-product-lg {}
+.con-product-lg div { float: left;}
+.con-product-lg .pic { width: 100%; height: 450px; overflow: hidden;  }
+.con-product-lg .desc { position:relative; top:-120px; left:200px; width: 225px; height: 115px; overflow: hidden; padding: 20px 0px 0px 10px; background-color: #ea0465;opacity: .7;color:#fff;}
+.con-product-lg .desc .brand {font-weight: bold;}
+
+
+.con-product-sm { }
+.con-product-sm div { float: left;}
+.con-product-sm .pic { width: 50%; height: 105px; overflow: hidden;  }
+.con-product-sm .desc { width: 50%; height: 105px; overflow: hidden; font-size: 10px; padding: 20px 0px 0px 10px; }
+.con-product-sm .desc .brand {font-weight: bold;}
+
+.con-product-xs { }
+.con-product-xs .pic { width: 100%; height: 93px; overflow: hidden;  }
+
+.con-board {}
+.con-board .title{}
+.con-board .content {height:180px; overflow: hidden;}
+.con-board .wish-box-sm { margin-top: -10px; }
+
+.wish-box { background-color: #000; width:70px; opacity: .7; margin-top: -11px; color: #fff; text-align: center;}
+.wish-box-up { background-color: #000; width:70px; opacity: .7; margin-top: -130px; color: #fff; text-align: center;}
+.wish-box-sm { background-color: #fff; padding:5px; opacity: .7; margin-top: -30px; color: #ea0465; text-align: center;}
+
+.con-fill { padding: 0px; }
+.tag-list .title {font-weight: bold;}
+.tag-list ul li{margin: 1px 2px;padding:3px;color:rgb(237,55,132);float:left;border:1px solid rgb(237,55,132);}
+
+.hr-bar { height: 5px;}
+.hr-bar-bs { background-color: #ea0465; height: 5px;margin-top: 10px;}
+/********************************************************************************************
+ Medium devices (desktops, 768px and up) 
+ @media (min-width: @screen-md-min) {
+********************************************************************************************/
+@media only screen and (min-width: 768px) {
+
+	
+}
+
+/********************************************************************************************
+ Medium devices (desktops, 992px and up) 
+ @media (min-width: @screen-md-min) {
+********************************************************************************************/
+@media only screen and (min-width: 992px) {
+
+
+	
+}
+
+/********************************************************************************************
+ Large devices (large desktops, 1200px and up) 
+ @media (min-width: @screen-lg-min) {
+********************************************************************************************/
+@media only screen and (min-width: 1200px) {
+
+	
+}

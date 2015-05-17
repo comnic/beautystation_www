@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/*
+	common
+	head
+	footer
+*/
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+html.noscroll{position: fixed;overflow-y: scroll;width: 100%;}
+
+body {background-color: #efefef;padding-top: 40px;padding-bottom: 40px;}
+
+body {font-family: 'Nanum Gothic',"Helvetica Neue",Helvetica,Arial,sans-serif;}
+
+img, object, embed, video {max-width: 100%;}
+
+img {border: 0;}
+
+.content{ background-color: #fff;}
+.pageContents>.title{font-size: 23pt; color: #303030; font-weight: 900; text-align: center;}
+
+a:link    {color:#333333; background-color:transparent; text-decoration:none}
+a:visited {color:#333333; background-color:transparent; text-decoration:none}
+a:hover   {color:#939598; background-color:transparent; text-decoration:none}
+a:active  {color:#333333; background-color:transparent; text-decoration:none}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {width:100%;}
+
+ul, ol {margin: 0px;padding: 0px;}
+li {list-style: none;}
+
+.ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis}
+
+.thumbnail {margin-bottom: 0px;}
+
+.p5 {padding: 5px;}
+.pl10 {padding-left: 10px;}
+.ml10 {margin-left: 10px;}
+.carousel {margin-bottom: 0px;}
+.mt120{margin-top: 120px;}
+
+.pageNavi {background-color: inherit; font-size: 9pt;}
+
+.submenu {}
+.submenu .title {font-size: 26pt; color: #ea0465; font-weight: 900; line-height: 110%}
+.submenu .underbar {width: 46px; height: 6px; background-color: #ea0465;}
+.submenu .menuItems {margin-top: 20px; font-size: 9pt; color: #9d9d9d;}
+.submenu .menuItems .active a{color: #ea0465;}
+.submenu .nav>li>a{padding: 5px 10px;}
+.submenu .nav>li>a:hover{color: #ea0465;}
+.submenu .nav>li>.nav>li>a{padding-left: 30px;}
+
+#topNavbar {background-color: #ea0465;background-image: none;height: 40px;}
+#topMenu {height: 40px; width:600px; margin-left: 50px;}
+#topMenu li{float: left; width: 120px; height: 40px; padding: 8px 0px;text-align: center;}
+#topMenu li a{font-size: 12px; color: #fff;}
+#topRight {height: 40px;}
+#topRight li {float: left; height: 40px; padding: 15px 0px;text-align: center; font-size: 10px; color: #fff;}
+#topRight li a{color: #fff;}
+#topRight #topChannelMenu { background-color: #ea0465; min-width: 80px;}
+#topRight #topChannelMenu li {clear: both; width: 100%; height: auto; padding: 5px;}
+
+#loginModal .modal-header{padding:5px;}
+
+
+#mainTopLeftMenu,#mainTopLeftChannel,#relationArea,#mainTopRight,#footerLogo{display: none;}
+#SNSList{margin-top: 25px;}
+#SNSList li{ margin-left: 10px;}
+#SNSList li>a{padding: inherit;}
+.footer{height: 25px;background-color: #303030;color: #efefef;text-align: right;font-size: 9pt;}
+.footer p{margin-top: 2px;}
+.footer p a {color: #efefef;}
+
+#beautystationMain{padding-bottom: 60px;}
+
+/* Medium devices (desktops, 768px and up) 
+@media (min-width: @screen-md-min) {
+*/
+
+@media only screen and (min-width: 768px) {
+
+.footer{font-size: 9pt;}
+#SNSList {display: block;}
+#footerLogo{display: inline;}
+
+	
+}
+
+/* Medium devices (desktops, 992px and up) 
+@media (min-width: @screen-md-min) {
+*/
+@media only screen and (min-width: 992px) {
+
+#SNSList{display: block;}
+
+	
+}
+
+
+/* Large devices (large desktops, 1200px and up) 
+@media (min-width: @screen-lg-min) {
+*/
+@media only screen and (min-width: 1200px) {
+
+
+	
+	
+}
+

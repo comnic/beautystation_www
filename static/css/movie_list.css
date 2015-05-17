@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+#mainBanner{
+	width: 100%;
+}
+
+#mainBannerCarousel {
+	width: 100%;	
+}
+
+#mainTopLeft {
+	margin-left: 0px;
+	float: left;
+}
+
+#mainTopLeft #mainTopLeftChannel {
+	margin-top: 10px;
+	height: auto;
+	overflow: auto;
+}	
+
+
+#mainTopCenter {
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+}
+	
+	
+#mainTopRight {
+	background-color: #fff;
+	height: 364px;
+	border: 1px solid #e6e7e8;
+	float: right;	
+	overflow: hidden;
+}
+
+
+#mainTopRight #ranking {
+	margin-left: 15px;
+}
+
+#mainTopRight #ranking li {
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+#mainList {
+	margin-top: 10px;
+}
+
+#movieListWrap, #movieList {
+	width: 100%;
+}
+
+#movieList li {
+	width: 100%;
+	float: left;
+	cursor: pointer;
+	
+}
+
+#movieList li img{
+	width: 100%;
+}
+
+#movieList li .content-item-over {
+	position: absolute;
+	left: -1000px;
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+#movieList li .content-item-txt {
+	height: 45px;
+	overflow: hidden;
+}
+
+
+#relationList #relationTitle {
+	color: #ea0465;
+}
+
+#movieContent {
+	/* min-height: 600px; */
+	padding-left: 25px;	
+}
+
+#modalMovieView #modalMovieDialog .modal-header{
+	border-bottom: none;
+	height: 60px;
+}
+
+#modalMovieView #modalMovieDialog #contentArea .modal-title{
+	margin: -15px auto;
+	width:124px;
+}
+
+/* #moviePlayer {
+	width: 625px;
+	height: 350px;
+}
+ */
+#movieInfo {
+	padding-left: 30px;
+	padding-right: 20px;
+}
+
+#movieContent #movieInfo #movieTitle {
+	color: #ea0465;	
+}
+
+#relationContentList li {
+	cursor: pointer;	
+}
+
+
+#channelList2{background-color: rgb(166,166,166)}
+#channelList2 li{float: left;text-align:center}
+#channelList2 li:hover{background-color:#ea0465}
+#channelList2 li a:link{color:white}
+
+
+
+/* Medium devices (desktops, 768px and up) 
+@media (min-width: @screen-md-min) {
+*/
+
+@media only screen and (min-width: 768px) {
+#movieList li .content-item-over {
+	left: auto;
+}
+
+.panel{margin-bottom: 0px;}
+#movieContent{/* min-height: 650px; */}
+#mainTopLeft #mainTopLeftChannel{height: 236px;}	
+#movieList li{width: 239px;height: 200px;}
+#movieList li .content-item-over{width: 225px;}
+#modalMovieDialog{width: 720px;}
+#modalMovieDialog #contentArea{width: 700px;float: none;margin: 0 auto;}
+
+#ranking p{font-size:11px;}
+}
+
+/* Medium devices (desktops, 992px and up) 
+@media (min-width: @screen-md-min) {
+*/
+@media only screen and (min-width: 992px) {
+
+#topChannelList{display: none;}
+#bigModalCloseBtn{display: none;}
+#mainTopLeftMenu,#mainTopLeftChannel,#mainTopRight,#relationArea{display: block;}
+#channelList li{margin-bottom: 20px;}
+#mainTopLeft #mainTopLeftChannel{height: 236px;}	
+#mainTopRight {height: 300px;}
+#movieList li{width: 235px;height: 200px;}
+#movieList li .content-item-over{width: 225px;}
+#movieContent{/* min-height: 650px; */}
+#relationContentList{padding-left: 10px;padding-right: 10px;overflow: auto;/* height: 550px; */}
+#relationContentList li{height: 73px;}
+#relationContentList li:hover{background-color: #ffd2d5;}
+#mainTopRight #ranking{margin-top: -8px;}
+#btnMore{height: 80px;margin-top: 10px;}
+#modalMovieDialog{width: 950px;}
+#modalMovieDialog #contentArea{width: 700px;float: left;}
+#modalMovieDialog #relationArea{width: 245px;float: right;}
+
+}
+
+/* Large devices (large desktops, 1200px and up) 
+@media (min-width: @screen-lg-min) {
+*/
+@media only screen and (min-width: 1200px) {
+
+#mainTopLeft #mainTopLeftChannel{height: 302px;}
+#mainTopRight{height: 364px;}
+#movieList li{width: 285px;height: 245px;}
+#movieList li .content-item-over{width: 275px;}
+#relationList{height: 620px;}
+#modalMovieDialog{width: 1120px;}
+#modalMovieDialog #contentArea{width: 825px;float: left;}
+#modalMovieDialog #relationArea{width: 274px;float: right;min-height:731px;}
+#relationProductList li{padding:2px; float:left;width:84px;height:84px;overflow:hidden;}
+#relationProductList li .cover{display:none;position:relative;z-index:10000;top:-80px;width:80px; height:80px;background-image:url(../images/relative_product_cover.png);opacity:0.7;font-size:9px;color:#fff;text-align:center;padding-top:10px;}
+#contentTagList li{margin: 0 2px;padding:3px;color:rgb(237,55,132);float:left;border:1px solid rgb(237,55,132);}
+
+#contentTagList {height:140px; overflow:auto;}
+#relationContentList li{height: 81px;}
+
+#mainTopRight #ranking{margin-top: 5px;}
+#ranking p{font-size:14px;}
+}

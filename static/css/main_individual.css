@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/********************************************************************************************
+ Medium devices (desktops, 768px and up) 
+ @media (min-width: @screen-md-min) {
+********************************************************************************************/
+@media only screen and (min-width: 768px) {
+
+	
+}
+
+/********************************************************************************************
+ Medium devices (desktops, 992px and up) 
+ @media (min-width: @screen-md-min) {
+********************************************************************************************/
+@media only screen and (min-width: 992px) {
+
+
+	
+}
+
+/********************************************************************************************
+ Large devices (large desktops, 1200px and up) 
+ @media (min-width: @screen-lg-min) {
+********************************************************************************************/
+@media only screen and (min-width: 1200px) {
+
+	#myInfo {height: 740px; background-image: url(../images/main/myinfo_logo.png); background-position: bottom; background-repeat: no-repeat}
+	#myInfo #profilePhoto {width: 165px; height: 165px; margin-top:48px;}
+	#myInfo #myProfileCover {position: relative; top: -165px;}
+	#myInfo #myName {margin-top: 30px; color: #ea0465; font-size: 20pt; font-weight: 900;}
+	#myInfo #myInfoDetail {margin-top: 55px; margin-left: 20px; font-size: 9pt; color: #9d9d9d;}
+	#myInfo #divider {width: 285px; height: 4px; margin: 50px 0 10px 0;  background-image: url(../images/main/divider_line.png);}
+
+	#myInfo #icons img {padding-right: 10px;}
+	
+	#topRightContents {background-color:#fff; height: 486px;}
+	
+	#section1 { height: 255px; }
+	
+}

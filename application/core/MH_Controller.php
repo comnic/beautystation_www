@@ -27,9 +27,11 @@ class MH_Controller extends CI_Controller {
 		if($this->session->userdata('is_login')){
 			return true;
 		}else{
-			return false;
-// 			$this->load->helper('url');
-// 			redirect('/auth/login?url='.urlencode($url));
+			if($url != ''){
+				$this->load->helper('url');
+				redirect('/auth/login?url='.urlencode($url));
+			}else
+				return false;
 		}
 	}
 	

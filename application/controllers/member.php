@@ -158,13 +158,72 @@ class Member extends MH_Controller {
 	 *
 	 *
 	 */
-	function recommend_products(){
+	function recommend_products($kind = "1"){
 		$this->_chkLogin('/member/recommend_products');
 	
 		$this->_header();
 	
-		$this->load->view("member/recommend_products");
+		$this->load->view("member/recommend_products", array('cont_kind'=>$kind));
 	
+		$this->_footer();
+	}
+	
+	/*
+	 * 
+	 * 
+	 * 
+	 */
+	function wish_list($kind = "onair"){
+		$this->_chkLogin('/member/wish_list');
+		
+		$this->_header();
+		
+		$this->load->view("member/wish_list", array('cont_kind'=>$kind));
+		
+		$this->_footer();
+		
+	}
+	
+	/*
+	 * 
+	 * 
+	 */
+	function mytrouble(){
+		$this->_chkLogin('/member/mytrouble');
+		
+		$this->_header();
+		
+		$this->load->view("member/mytrouble");
+		
+		$this->_footer();
+	}
+	
+	/*
+	 * 
+	 * 
+	 * 
+	 */
+	function powderroom(){
+		$this->_chkLogin('/member/powderroom');
+		
+		$this->_header();
+		
+		$this->load->view("member/powderroom");
+		
+		$this->_footer();
+	}
+	
+	/*
+	 * 
+	 * 
+	 */
+	function mysurvey(){
+		$this->_chkLogin('/member/mysurvey');
+		
+		$this->_header();
+		
+		$this->load->view("member/mysurvey");
+		
 		$this->_footer();
 	}
 	

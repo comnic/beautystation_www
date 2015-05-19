@@ -14,19 +14,19 @@
 					</ul>
 				</li>
 				<li>
-					<a href="#">위시리스트</a>
+					<a href="/member/wish_list">위시리스트</a>
 					<ul class="nav">
-						<li><a href="#">- On:Air</a></li>
-						<li><a href="#">- Magzine</a></li>
-						<li><a href="#">- Brand</a></li>
-						<li><a href="#">- product</a></li>
+						<li <?php if($SUBMENU_NO == "31") echo(' class="active"');?>><a href="/member/wish_list/onair">- On:Air</a></li>
+						<li <?php if($SUBMENU_NO == "32") echo(' class="active"');?>><a href="/member/wish_list/magzine">- Magzine</a></li>
+						<li <?php if($SUBMENU_NO == "33") echo(' class="active"');?>><a href="/member/wish_list/brand">- Brand</a></li>
+						<li <?php if($SUBMENU_NO == "34") echo(' class="active"');?>><a href="/member/wish_list/product">- product</a></li>
 					</ul>
 				</li>
-				<li><a href="#">나의 고민</a></li>
-				<li><a href="#">파우더 룸</a></li>
-				<li><a href="#">설문</a></li>
-				<li><a href="#">포인트</a></li>
-				<li><a href="#">통계</a></li>
+				<li <?php if($SUBMENU_NO == "4") echo(' class="active"');?>><a href="/member/mytrouble">나의 고민</a></li>
+				<li <?php if($SUBMENU_NO == "5") echo(' class="active"');?>><a href="/member/powderroom">파우더 룸</a></li>
+				<li <?php if($SUBMENU_NO == "6") echo(' class="active"');?>><a href="/member/mysurvey">설문</a></li>
+				<li <?php if($SUBMENU_NO == "7") echo(' class="active"');?>><a href="#">포인트</a></li>
+				<li <?php if($SUBMENU_NO == "8") echo(' class="active"');?>><a href="#">통계</a></li>
 			</ul>
 
 		</div>

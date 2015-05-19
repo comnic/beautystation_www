@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-.dividerLine {margin-top: 30px; margin-bottom: 30px; height: 1px; background-color: #efefef;}
 /********************************************************************************************
  Medium devices (desktops, 768px and up) 
  @media (min-width: @screen-md-min) {
@@ -31,7 +30,7 @@
 	
 	#detailInfo {height: 310px;padding-top: 140px;}
 	#detailInfo .title{font-weight: bold;}
-	#detailInfo #divider {width: 285px; height: 4px; margin: 50px 0 10px 0;  background-image: url(../images/main/divider_line.png);}
+	#detailInfo #divider {width: 285px; height: 4px; margin: 50px 0 10px 0;  background-image: url(../../images/main/divider_line.png);}
 	#detailInfo #icons img {padding-right: 10px;}
 	
 	

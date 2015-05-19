@@ -1,5 +1,5 @@
 <div class="row">
-	<?php echo form_open_multipart('/member/myinfo1', 'onsubmit="chkSubmit(this.form);"'); ?>
+	<?php echo form_open('/member/myinfo1', 'onsubmit="chkSubmit(this.form);"'); ?>
 	<div class="col-md-12 btn-group" data-toggle="buttons">
 	  <label class="col-md-6 btn btn-default" style="padding:50px;">
 	    <input type="radio" name="gender" id="gender1" value="M" autocomplete="off" >남성

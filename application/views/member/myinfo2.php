@@ -1,5 +1,5 @@
 <div>
-	<?php echo form_open_multipart('/member/myinfo2', 'onsubmit="chkSubmit(this.form);"'); ?>
+	<?php echo form_open('/member/myinfo2', 'onsubmit="chkSubmit(this.form);"'); ?>
 	<div class="row">
 		<h1>피부타입</h1>
 		<div class="col-md-12 btn-group" data-toggle="buttons">
@@ -21,10 +21,10 @@
 		<h1>피부톤</h1>
 		<div class="col-md-12 btn-group" data-toggle="buttons">
 		  <label class="col-md-4 btn btn-default" style="padding:50px;">
-		    <input type="radio" name="skin_tone" id="skin_tone1" value="1" autocomplete="off" >웜톤
+		    <input type="radio" name="skin_tone" id="skin_tone2" value="1" autocomplete="off"> 쿨톤
 		  </label>
 		  <label class="col-md-4 btn btn-default" style="padding:50px;">
-		    <input type="radio" name="skin_tone" id="skin_tone2" value="2" autocomplete="off"> 쿨톤
+		    <input type="radio" name="skin_tone" id="skin_tone1" value="2" autocomplete="off" >웜톤
 		  </label>
 		  <label class="col-md-4 btn btn-default" style="padding:50px;">
 		    <input type="radio" name="skin_tone" id="skin_tone3" value="3" autocomplete="off"> 뉴트롤

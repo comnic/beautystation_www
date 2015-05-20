@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/********************************************************************************************
+ Medium devices (desktops, 768px and up) 
+ @media (min-width: @screen-md-min) {
+********************************************************************************************/
+@media only screen and (min-width: 768px) {
+
+	
+}
+
+/********************************************************************************************
+ Medium devices (desktops, 992px and up) 
+ @media (min-width: @screen-md-min) {
+********************************************************************************************/
+@media only screen and (min-width: 992px) {
+
+
+	
+}
+
+/********************************************************************************************
+ Large devices (large desktops, 1200px and up) 
+ @media (min-width: @screen-lg-min) {
+********************************************************************************************/
+@media only screen and (min-width: 1200px) {
+	#listWrap{margin-top: 10px;}
+	#myTroubleTable thead{background-color: #efefef; border-top: 2px solid #ea0465;}
+	#myTroublelist{font-size: 9pt;}
+	#myTroublelist .mytrouble-category{color: #ea0465;}
+	#myTroublelist .btn-modify{width: 50px; height: 20px;border: 1px solid #ea0465; background-color: #fff; margin: 5px;}
+	#myTroublelist .btn-delete{width: 50px; height: 20px;border: 1px solid #000; background-color: #fff; margin: 5px;}
+	
+
+}

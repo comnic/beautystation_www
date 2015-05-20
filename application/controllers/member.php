@@ -197,6 +197,20 @@ class Member extends MH_Controller {
 		
 		$this->_footer();
 	}
+
+	/*
+	 *
+	 *
+	 */
+	function mytrouble_reg(){
+		$this->_chkLogin('/member/mytrouble_reg');
+	
+		$this->_header();
+	
+		$this->load->view("member/mytrouble_reg");
+	
+		$this->_footer();
+	}
 	
 	/*
 	 * 

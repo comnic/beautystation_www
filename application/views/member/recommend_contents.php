@@ -7,7 +7,7 @@
 <div id="myPageRecommendContents" class="container content">
 	<!-- page navi -->
 	<div id="pageNavi" class="pull-right">
-		<ol class="breadcrumb pageNavi"> <li><a href="#">HOME</a></li><li><a href="#">MY PAGE</a></li><li class="active">추천해요</li> <li class="active">Contents</li></ol>
+		<ol class="breadcrumb pageNavi"> <li><a href="/">HOME</a></li><li><a href="/member/mypage">MY PAGE</a></li><li class="active">추천해요</li> <li class="active">Contents</li></ol>
 	</div><!-- page navi -->
 	
 	<!-- page wrap -->

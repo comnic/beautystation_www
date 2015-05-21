@@ -41,43 +41,43 @@
 			<div id="pageBody" class="col-md-12 page-body">
 				<ul id="contentsList">
 					<li>
-						<div class="cont_img"><img src="/static/images/content/26.jpg" width="170" height="109"></div>
-						<div class="cont_title title1">[트루미쇼]</div>
+						<div class="cont_img"><a href="/contents/onair/26"><img src="/static/images/content/26.jpg" width="170" height="109"></a></div>
+						<div class="cont_title title1"><a href="/product/onair/26">[트루미쇼]</a></div>
 						<div class="cont_summary">ep.05 "5살 어려보이는 비법! 하트라인 만들기"</div>
 					</li>
 					<li>
-						<div class="cont_img"><img src="/static/images/content/26.jpg" width="170" height="109"></div>
-						<div class="cont_title title2">[홍스광뷰티]</div>
+						<div class="cont_img"><a href="/contents/onair/26"><img src="/static/images/content/26.jpg" width="170" height="109"></a></div>
+						<div class="cont_title title2"><a href="/product/onair/26">[홍스광뷰티]</div>
 						<div class="cont_summary">ep.05 "5살 어려보이는 비법! 하트라인 만들기"</div>
 					</li>
 					<li>
-						<div class="cont_img"><img src="/static/images/content/26.jpg" width="170" height="109"></div>
-						<div class="cont_title title3">[언니네핫초이스]</div>
+						<div class="cont_img"><a href="/contents/onair/26"><img src="/static/images/content/26.jpg" width="170" height="109"></a></div>
+						<div class="cont_title title3"><a href="/product/onair/26">[언니네핫초이스]</div>
 						<div class="cont_summary">ep.05 "5살 어려보이는 비법! 하트라인 만들기"</div>
 					</li>
 					<li>
-						<div class="cont_img"><img src="/static/images/content/26.jpg" width="170" height="109"></div>
-						<div class="cont_title title4">[미인식당]</div>
+						<div class="cont_img"><a href="/contents/onair/26"><img src="/static/images/content/26.jpg" width="170" height="109"></a></div>
+						<div class="cont_title title4"><a href="/product/onair/26">[미인식당]</div>
 						<div class="cont_summary">ep.05 "5살 어려보이는 비법! 하트라인 만들기"</div>
 					</li>
 					<li>
-						<div class="cont_img"><img src="/static/images/content/26.jpg" width="170" height="109"></div>
-						<div class="cont_title title1">[트루미쇼]</div>
+						<div class="cont_img"><a href="/contents/onair/26"><img src="/static/images/content/26.jpg" width="170" height="109"></a></div>
+						<div class="cont_title title1"><a href="/product/onair/26">[트루미쇼]</div>
 						<div class="cont_summary">ep.05 "5살 어려보이는 비법! 하트라인 만들기"</div>
 					</li>
 					<li>
-						<div class="cont_img"><img src="/static/images/content/26.jpg" width="170" height="109"></div>
-						<div class="cont_title title2">[홍스광뷰티]</div>
+						<div class="cont_img"><a href="/contents/onair/26"><img src="/static/images/content/26.jpg" width="170" height="109"></a></div>
+						<div class="cont_title title2"><a href="/product/onair/26">[홍스광뷰티]</div>
 						<div class="cont_summary">ep.05 "5살 어려보이는 비법! 하트라인 만들기"</div>
 					</li>
 					<li>
-						<div class="cont_img"><img src="/static/images/content/26.jpg" width="170" height="109"></div>
-						<div class="cont_title title2">[홍스광뷰티]</div>
+						<div class="cont_img"><a href="/contents/onair/26"><img src="/static/images/content/26.jpg" width="170" height="109"></a></div>
+						<div class="cont_title title2"><a href="/product/onair/26">[홍스광뷰티]</div>
 						<div class="cont_summary">ep.05 "5살 어려보이는 비법! 하트라인 만들기"</div>
 					</li>
 					<li>
-						<div class="cont_img"><img src="/static/images/content/26.jpg" width="170" height="109"></div>
-						<div class="cont_title title2">[홍스광뷰티]</div>
+						<div class="cont_img"><a href="/contents/onair/26"><img src="/static/images/content/26.jpg" width="170" height="109"></a></div>
+						<div class="cont_title title2"><a href="/product/onair/26">[홍스광뷰티]</a></div>
 						<div class="cont_summary">ep.05 "5살 어려보이는 비법! 하트라인 만들기"</div>
 					</li>
 				</ul>

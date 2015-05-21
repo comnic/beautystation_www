@@ -26,8 +26,8 @@
 @media only screen and (min-width: 1200px) {
 	#contentsList {}
 	#contentsList li {float: left; width: 190px; height: 275px; padding: 10px; overflow: hidden;}
-	#contentsList li .cont_brand {font-size: 11pt; color:#9d9d9d;}
-	#contentsList li .cont_title {font-size: 11pt; overflow: hidden;}
+	#contentsList li .cont_brand a {font-size: 11pt; color:#9d9d9d;}
+	#contentsList li .cont_title a {font-size: 11pt; overflow: hidden;}
 	#contentsList li .cont_price {font-size: 10pt;}
 	#contentsList li .cont_buy_btn {font-size: 11pt; width: 50px; height: 20px; background-color: #ea0465; color: #fff;}
 	

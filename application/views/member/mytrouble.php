@@ -66,7 +66,7 @@
   							<tr>
   								<td>10</td>
   								<td class="mytrouble-category">피부타입</td>
-  								<td>아우 정말 건조해서 못살겠어요!!!</td>
+  								<td><a href="/trouble/view/2">아우 정말 건조해서 못살겠어요!!!</a></td>
   								<td>0</td>
   								<td width="100">2015.05.10 11:00:00</td>
   								<td width="100">2015.05.10 11:00:00</td>
@@ -78,7 +78,7 @@
   							<tr>
   								<td>9</td>
   								<td class="mytrouble-category">피부타입</td>
-  								<td>아우 정말 건조해서 못살겠어요!!!</td>
+  								<td><a href="/trouble/view/2">아우 정말 건조해서 못살겠어요!!!</a></td>
   								<td>0</td>
   								<td width="100">2015.05.10 11:00:00</td>
   								<td width="100">2015.05.10 11:00:00</td>
@@ -90,7 +90,7 @@
   							<tr>
   								<td>8</td>
   								<td class="mytrouble-category">피부타입</td>
-  								<td>아우 정말 건조해서 못살겠어요!!!</td>
+  								<td><a href="/trouble/view/2">아우 정말 건조해서 못살겠어요!!!</a></td>
   								<td>0</td>
   								<td width="100">2015.05.10 11:00:00</td>
   								<td width="100">2015.05.10 11:00:00</td>
@@ -102,7 +102,7 @@
   							<tr>
   								<td>7</td>
   								<td class="mytrouble-category">피부타입</td>
-  								<td>아우 정말 건조해서 못살겠어요!!!</td>
+  								<td><a href="/trouble/view/2">아우 정말 건조해서 못살겠어요!!!</a></td>
   								<td>0</td>
   								<td width="100">2015.05.10 11:00:00</td>
   								<td width="100">2015.05.10 11:00:00</td>
@@ -114,7 +114,7 @@
   							<tr>
   								<td>6</td>
   								<td class="mytrouble-category">피부타입</td>
-  								<td>아우 정말 건조해서 못살겠어요!!!</td>
+  								<td><a href="/trouble/view/2">아우 정말 건조해서 못살겠어요!!!</a></td>
   								<td>0</td>
   								<td width="100">2015.05.10 11:00:00</td>
   								<td width="100">2015.05.10 11:00:00</td>
@@ -126,7 +126,7 @@
   							<tr>
   								<td>5</td>
   								<td class="mytrouble-category">피부타입</td>
-  								<td>아우 정말 건조해서 못살겠어요!!!</td>
+  								<td><a href="/trouble/view/2">아우 정말 건조해서 못살겠어요!!!</a></td>
   								<td>0</td>
   								<td width="100">2015.05.10 11:00:00</td>
   								<td width="100">2015.05.10 11:00:00</td>

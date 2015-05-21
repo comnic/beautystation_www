@@ -30,10 +30,10 @@ img {border: 0;}
 .page-contents>#pageTitle>.sub-title{font-size: 13pt; color: #9d9d9d; font-weight: 900; text-align: center;margin-top: -7px;}
 #pageBody{padding-top: 20px;}
 
-a:link    {color:#333333; background-color:transparent; text-decoration:none}
-a:visited {color:#333333; background-color:transparent; text-decoration:none}
-a:hover   {color:#939598; background-color:transparent; text-decoration:none}
-a:active  {color:#333333; background-color:transparent; text-decoration:none}
+a:link    {color:#000; background-color:transparent; text-decoration:none}
+a:visited {color:#000; background-color:transparent; text-decoration:none}
+a:hover   {color:#000; background-color:transparent; text-decoration:none}
+a:active  {color:#000; background-color:transparent; text-decoration:none}
 
 /* IE 6 does not support max-width so default to width 100% */
 .ie6 img {width:100%;}

@@ -91,8 +91,11 @@
 					
 					<div>
 						<div class="title">생일</div>
-<?php 
-	$arrBirth = explode("-", $member_info->md_birth);
+<?php
+	if( $member_info->md_birth != "")
+		$arrBirth = explode("-", $member_info->md_birth);
+	else
+		$arrBirth = array('','','');
 ?>
 						<input type="number" class="form-control" name="birth_year" id="birth_year" placeholder="출생년도를 입력해 주세요!(yyyy)" value="<?php echo($arrBirth[0]);?>">
 						<input type="number" class="form-control" name="birth_month" id="birth_month" placeholder="출생월을 입력해 주세요!(mm)" value="<?php echo($arrBirth[1]);?>">

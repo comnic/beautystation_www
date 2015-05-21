@@ -1,8 +1,8 @@
 <?php 
 	$SUBMENU_NO = "4";
 ?>
-<link href="/static/css/member/mytrouble.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/static/js/member/recommend_contents.js"></script>
+<link href="/static/css/member/mytrouble_reg.css" rel="stylesheet" type="text/css">
+
 
 <div id="myPageRecommendContents" class="container content">
 	<!-- page navi -->
@@ -27,39 +27,66 @@
 				<div class="col-md-12 title">나의 고민</div>
 				<div class="col-md-12 sub-title">Register</div>
 			</div><!-- page title -->
-			
-			<p class="hr-red col-md-12"></p>
-			
+
 			<!-- page body -->
 			<div id="pageBody" class="col-md-12 page-body">
-
-<form class="form-horizontal">
-  <div class="form-group">
-    <label for="inputEmail3" class="col-md-2 control-label">카테고리</label>
-    <div class="col-md-10">
-
-    
-    
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputPassword3" class="col-md-2 control-label">제목</label>
-    <div class="col-md-9">
-      <input type="text" class="form-control" id="subjct" placeholder="나의 고민에 대한 제목을 적어주세요!">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputPassword3" class="col-md-2 control-label">내용</label>
-    <div class="col-md-9">
-      <textarea class="form-control" rows="5"></textarea>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-md-offset-2 col-md-9">
-      <button type="submit" class="btn btn-default">Sign in</button>
-    </div>
-  </div>
-</form>
+			
+				<p class="hr-red col-md-12" style="margin-bottom: 0px;"></p>
+			
+				<table id="mytroubleRegTable" class="col-md-12">
+					<tbody>
+						<tr>
+							<th class="col-md-2 text-center bottom-line">카테고리</th>
+							<td class="col-md-10">
+								<label class="radio-inline col-md-2">
+								  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">트러블
+								</label>
+								<label class="radio-inline col-md-2">
+								  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">건조함
+								</label>
+								<label class="radio-inline col-md-2">
+								  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">지복합피부
+								</label>
+								<label class="radio-inline col-md-2">
+								  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">지복합피부
+								</label>
+								<label class="radio-inline col-md-2">
+								  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">지복합피부
+								</label>
+								<br>
+								<label class="radio-inline col-md-2">
+								  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">지복합피부
+								</label>
+								<label class="radio-inline col-md-2">
+								  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">지복합피부
+								</label>
+								<label class="radio-inline col-md-2">
+								  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">지복합피부
+								</label>
+								<label class="radio-inline col-md-2">
+								  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">지복합피부
+								</label>
+								<label class="radio-inline col-md-2">
+								  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">지복합피부
+								</label>						
+							</td>
+						</tr>
+						<tr>
+							<th class="col-md-2 text-center bottom-line">제목</th>
+							<td class="col-md-10"><input type="text" class="form-control" id="subjct" placeholder="나의 고민에 대한 제목을 적어주세요!"></td>
+						</tr>
+						<tr>
+							<th class="col-md-2 text-center">내용</th>
+							<td class="col-md-10"><textarea class="form-control" rows="10"  placeholder="고민 내용을 작성해주세요!"></textarea></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="2" class="text-center" style="height: 50px; vertical-align: middle;"><button class="btn btn-cancel"> 취소 </button> <button class="btn btn-register">고민등록</button></td>
+						</tr>
+					</tfoot>
+				</table>
+				
 			
 			
 

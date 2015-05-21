@@ -24,13 +24,10 @@
  @media (min-width: @screen-lg-min) {
 ********************************************************************************************/
 @media only screen and (min-width: 1200px) {
-	#mytroubleRegTable>tbody>tr {border-bottom: 1px solid #efefef; margin-bottom: 2px;}
-	#mytroubleRegTable>tbody>tr>th {background-color: #efefef; }
-	#mytroubleRegTable>tbody>tr>th.bottom-line {border-bottom: 2px solid #fff;}
-	#mytroubleRegTable>tbody>tr>td {padding: 10px;}
-	
-	#mytroubleRegTable .btn-cancel{border: 1px solid #ea0465; background-color: #fff; color: #000; margin-bottom: 2px;}
-	#mytroubleRegTable .btn-register{border: 1px solid #000; background-color: #000; color: #fff;}
-	
+	#listWrap{margin-top: 10px;}
+	#mySurveyTable thead{background-color: #efefef; border-top: 2px solid #ea0465;}
+	#mySurveyTable{font-size: 9pt;}
+	#mySurveyTable .btn-survey{border: 1px solid #ea0465; background-color: #fff; color: #000; margin-bottom: 2px;}
+	#mySurveyTable .btn-result{border: 1px solid #000; background-color: #fff; color: #000;}
 
 }

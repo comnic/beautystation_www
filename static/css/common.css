@@ -17,8 +17,11 @@ img, object, embed, video {max-width: 100%;}
 
 img {border: 0;}
 
+.row {margin-left:0px; margin-right: 0px;}
 .hr {height:1px; background-color: #efefef;margin-top:15px; margin-bottom:15px;}
 .hr-red {height:2px; background-color: #ea0465;margin-top:15px; margin-bottom:15px;}
+
+.page-wrap {padding-bottom: 100px;}
 
 .content{ background-color: #fff;}
 .title{font-weight: bold;}
@@ -28,6 +31,10 @@ img {border: 0;}
 .page-contents>#pageTitle .top-bar{width: 60px; height: 3px; background-color: #9d9d9d; margin: 0 auto;}
 .page-contents>#pageTitle>.title{font-size: 23pt; color: #303030; font-weight: 900; text-align: center;}
 .page-contents>#pageTitle>.sub-title{font-size: 13pt; color: #9d9d9d; font-weight: 900; text-align: center;margin-top: -7px;}
+
+.page-contents>#pageTitle .top-bar2{width: 30px; height: 5px; background-color: #ea0465;}
+.page-contents>#pageTitle>.title2{font-size: 23pt; color: #ea0465; font-weight: 900;}
+
 #pageBody{padding-top: 20px;}
 
 a:link    {color:#000; background-color:transparent; text-decoration:none}
@@ -91,9 +98,9 @@ li {list-style: none;}
 
 @media only screen and (min-width: 768px) {
 
-.footer{font-size: 9pt;}
-#SNSList {display: block;}
-#footerLogo{display: inline;}
+	.footer{font-size: 9pt;}
+	#SNSList {display: block;}
+	#footerLogo{display: inline;}
 
 	
 }
@@ -103,7 +110,7 @@ li {list-style: none;}
 */
 @media only screen and (min-width: 992px) {
 
-#SNSList{display: block;}
+	#SNSList{display: block;}
 
 	
 }

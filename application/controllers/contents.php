@@ -47,6 +47,33 @@ class Contents extends MH_Controller {
 		$this->_footer();
 	}
 	
+	/*
+	 * 
+	 * 
+	 */
+	public function onair($cidx = "")
+	{
+		if($cidx == ""){
+			log_message("error", "idx값 없이 요청.");
+			$this->load->helper('url');
+			redirect('/contents/list/onair');
+				
+			return false;
+		}
+		
+		$this->_header();
+	
+		$data = $this->content_model->getContent($cidx);
+		
+		$this->load->helper('url');
+		$data['content'] = auto_link(nl2br($data['content']), 'both', TRUE);
+	
+		$this->load->view('contents/onair', array('data' => $data));
+		
+		$this->_footer();
+	
+	}
+	
 	public function get_content_ajax()
 	{
 		if(count($this->_segment) < 3){

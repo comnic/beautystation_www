@@ -2,7 +2,6 @@
 	$SUBMENU_NO = "4";
 ?>
 <link href="/static/css/member/mytrouble.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/static/js/member/recommend_contents.js"></script>
 
 <div id="myPageRecommendContents" class="container content">
 	<!-- page navi -->

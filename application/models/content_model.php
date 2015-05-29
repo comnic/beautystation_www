@@ -19,8 +19,9 @@ class Content_model extends CI_Model{
 		$total_record = $this->db->count_all_results();
 		
 		//컨텐츠 리스트를 구한다.
-		$this->db->select('c_idx as idx, cc_idx as category, c_kind as kind, c_title as title, c_count as cnt, c_img as img')
+		$this->db->select('c_idx as idx, cc_idx as channel_idx, cc_title as channel_title, c_kind as kind, c_title as title, c_count as cnt, c_img as img')
 			->from('contents')
+			->join('content_channel', 'contents.cc_idx = content_channel.idx')
 			->where($sqlWhere, NULL, FALSE)
 			->order_by("c_idx", "desc")
 			->limit($cntPerPage, $start);
@@ -38,8 +39,9 @@ class Content_model extends CI_Model{
 			$this->upCount($idx);
 			
 			//idx해당 컨텐츠 정보를 구한다.
-			$this->db->select('c_idx as idx, cc_idx as category, c_kind as kind, c_title as title, c_summary as summary, c_content as content, c_movie_link as movie_link, c_count as cnt')
+			$this->db->select('c_idx as idx, cc_idx as channel_idx, cc_title as channel_title, c_kind as kind, c_title as title, c_summary as summary, c_content as content, c_movie_link as movie_link, c_count as cnt')
 			->from('contents')
+			->join('content_channel', 'contents.cc_idx = content_channel.idx')
 			->where('c_idx', $idx)
 			->order_by("c_idx", "desc");
 			
@@ -62,6 +64,28 @@ class Content_model extends CI_Model{
 		//return $this->db->query("SELECT c_idx as idx, c_title as title FROM contents WHERE c_active = 'Y' ORDER BY c_count DESC limit 10")->result_array();
 	}
 	
+	/*
+	 * 
+	 * 
+	 */
+ 	function getRelativeContents($kind = "MV", $cidx){
+		
+		$sqlWhere = " c_kind = ". $this->db->escape($kind) . " AND c_active = 'Y' AND c_publish_date <= now() ";
+		
+		$sqlWhere .= " AND cc_idx = (select cc_idx from contents where c_idx = '$cidx') ";
+
+		//컨텐츠 리스트를 구한다.
+		$this->db->select('c_idx as idx, cc_idx as channel_idx, cc_title as channel_title, c_kind as kind, c_title as title, c_count as cnt, c_img as img')
+			->from('contents')
+			->join('content_channel', 'contents.cc_idx = content_channel.idx')
+			->where($sqlWhere, NULL, FALSE)
+			->order_by("c_idx", "desc")
+			->limit(5, 1);
+		
+		$query = $this->db->get();
+
+		return array("items"=>$query->result_array());
+	}
 	/*
 	 * getRelativeProducts()
 	 * 컨텐츠와 관련있는 상품의 리스트를 구한다.

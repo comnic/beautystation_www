@@ -64,6 +64,7 @@ class Contents extends MH_Controller {
 		$this->_header();
 	
 		$data = $this->content_model->getContent($cidx);
+		$data['relative_contents'] = $this->content_model->getRelativeContents("MV", $data['idx']);
 		
 		$this->load->helper('url');
 		$data['content'] = auto_link(nl2br($data['content']), 'both', TRUE);

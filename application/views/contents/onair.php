@@ -100,11 +100,6 @@ var movie_id = '<?php echo($data['movie_link']);?>';
 						<p class="title col-md-12">Tag</p>
 						<div id="tagContent" class="col-md-12">
 							<ul id="tagList">
-								<li><a href="/tag/search/1">#뷰티스테이션</a></li>
-								<li><a href="/tag/search/1">#홍석천</a></li>
-								<li><a href="/tag/search/1">#언니네 핫 초이스</a></li>
-								<li><a href="/tag/search/1">#이청아</a></li>
-								<li><a href="/tag/search/1">#손호영</a></li>
 							</ul>
 						</div>
 						
@@ -213,6 +208,7 @@ foreach($data['relative_contents']['items'] as $item){
 					
 					<p class="title">댓글(<span class="replyCnt">2</span>)</p>
 					<div id="replyWriteFormLayer" class="col-md-12">
+<?php echo form_open('/', 'name="replyWriteForm" onsubmit="return chkReplySubmit();"'); ?>
 						<div id="replyWriteProfilePhoto" class="col-md-1">
 							<div id="myProfile">
 <?php 
@@ -227,13 +223,14 @@ foreach($data['relative_contents']['items'] as $item){
 						</div>
 						<div id="replyWriteForm" class="col-md-10">
 
-							<input type="text" class="col-md-11" name="reply" <?php if($ISLOGIN){ echo('placeholder="댓글달기"'); }else{ echo('placeholder="로그인을 먼저 하셔야 댓글 작성이 가능합니다." readonly');}?>>
+							<input type="text" class="col-md-11" name="reply_cont" <?php if($ISLOGIN){ echo('placeholder="댓글달기"'); }else{ echo('placeholder="로그인을 먼저 하셔야 댓글 작성이 가능합니다." readonly');}?>>
 							<button class="btn btn-lg col-md-1" <?php if(!$ISLOGIN){ echo('disabled="disabled"'); }?>>등록</button>
 
 						</div>
+					</form>
 					</div>
 					<div id="replyListLayer" class="col-md-12">
-						<ul>
+						<ul id="replyList">
 							<li>
 								<span class="replyName">melissa</span>
 								<span class="replyMemo">동해물과 백두산이 마르고 닳도록...</span>

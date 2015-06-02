@@ -54,9 +54,9 @@
     		<div class="collapse navbar-collapse">
       			<ul id="topMenu" class="top-navi navbar-left">
         			<li><a href="/member/mypage">MY PAGE</a></li>
-        			<li><a href="/movie_list">ON:AIR</a></li>
+        			<li><a href="/contents/lists/onair/">ON:AIR</a></li>
         			<li><a href="/">MAGZINE</a></li>
-        			<li><a href="/">PRODUCT</a></li>
+        			<li><a href="/product/lists/">PRODUCT</a></li>
         			<li><a href="/">EVENT</a></li>
         		</ul>
 

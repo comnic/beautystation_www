@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+.content {background-color: #efefef;}
+.page-wrap {padding-bottom: 0px;}
+#BottomLayer{background-color: #fff; margin-top: 10px;}
+
+/********************************************************************************************
+ Medium devices (desktops, 768px and up) 
+ @media (min-width: @screen-md-min) {
+********************************************************************************************/
+@media only screen and (min-width: 768px) {
+
+	
+}
+
+/********************************************************************************************
+ Medium devices (desktops, 992px and up) 
+ @media (min-width: @screen-md-min) {
+********************************************************************************************/
+@media only screen and (min-width: 992px) {
+
+
+	
+}
+
+/********************************************************************************************
+ Large devices (large desktops, 1200px and up) 
+ @media (min-width: @screen-lg-min) {
+********************************************************************************************/
+@media only screen and (min-width: 1200px) {
+	
+	#chNavLeft{position: absolute;z-index: 1000;left:-15px;width: 205px; height: 170px; overflow: hidden;}
+	#chNavLeft .leftChBanner{position: relative; left: -205px; display: none;}
+	
+	#chNavRight{position: absolute;z-index: 1000;left:950px;width: 205px; height: 170px; overflow: hidden;}
+	#chNavRight #innerWrap{position: relative; left:190px; width: 205px; height: 170px;}
+	#chNavRight img{float: left;}
+	#chNavRight .rightChBanner{position: relative; display: block;}
+	
+	.list-title {font-size: 18pt; font-weight: bold;}
+	
+	#TopLayer {height: 720px; overflow: hidden;}
+	.contents-list-ch1 {background-image: url(../../images/content/list/bg_ch1.png); }
+	.contents-list-ch2 {background-image: url(../../images/content/list/bg_ch2.png); }
+	.contents-list-ch3 {background-image: url(../../images/content/list/bg_ch3.png); }
+	.contents-list-ch4 {background-image: url(../../images/content/list/bg_ch4.png); }
+	
+	#playerLayer {margin-top: 345px; height: 350px;}
+	
+	#playerLayer .small-player {margin-bottom: 9px;}
+	
+	#titleLayer {padding-top: 20px;}
+	#listLayer {min-height: 470px; padding-top: 20px;}
+	
+	#contentsList li {float: left; width:190px; height: 215px; padding: 10px;}
+	#contentsList li .title {font-size: 10pt;}
+	#contentsList li a:hover{color: #ea0465;}
+	#contentsList li .desc {text-align: right; font-size: 8pt;}
+	
+	#btnMoreLayer {position: relative; top:24px;}
+	#btnMoreLayer #btnMore {cursor: pointer;}
+}

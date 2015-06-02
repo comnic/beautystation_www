@@ -33,8 +33,9 @@
 	#contentsDesc #contentDesc {font-size: 9pt;}
 	
 	#contentEval {margin-top: 20px;}
-	#contentEval #contentsEvalGroup label {background-color: #9d9d9d;}
+	#contentEval #contentsEvalGroup label {background-color: #9d9d9d; color: #fff;}
 	#contentEval #contentsEvalGroup .btn-default:hover {background-color: #ea0465;}
+		#contentEval #contentsEvalGroup .btn-default.active {background-color: #ea0465;}
 	
 	#RPList li{padding:2px; float:left;width:70px;height:70px;overflow:hidden;cursor:pointer;}
 	#RPList li .cover{display:none;position:relative;z-index:10000;top:-70px;width:70px; height:70px;background-image:url(../../images/relative_product_cover.png);opacity:0.7;font-size:9px;color:#fff;text-align:center;padding-top:10px;}
@@ -65,5 +66,6 @@
 	
 	#replyListLayer {padding-left: 110px;}
 	#replyListLayer .replyName {font-weight: bold; color: #ea0465; margin-right: 10px;}
-	#replyListLayer .replyMemo {font-size: 9pt;}
+	#replyListLayer .replyMemo {font-size: 10pt;}
+	#replyListLayer .replyRegTime {margin-left: 20px; font-size: 9pt;}
 }

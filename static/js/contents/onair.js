@@ -3,9 +3,31 @@
 $(document).ready(function(e) {	
 	getRelativeProductList(cidx);
 	getTagList(cidx);
+	getReplyList(cidx);
 });
 
+/*
+ * 
+ */
+function getReplyList(cidx){
+	$('#replyList').empty();
+	
+	$.getJSON("/reply/getList/"+cidx, function( data ){
+		if( data.length > 0 ){
 
+			$.each(data, function(idx, item){
+				$('#replyList').append('<li><span class="replyName">'+item.mb_name+'</span><span class="replyMemo">'+item.re_memo+'</span><span class="replyRegTime">'+item.re_reg_time+'</span></li>');
+			});
+			
+		}
+	});	
+
+}
+
+
+/*
+ * 
+ */
 function getTagList(cidx){
 	$("#tagList").empty();
 	
@@ -71,6 +93,37 @@ $(document).on("mouseleave", "#RPList li", function(){
 	
 });	
 
+function chkReplySubmit(){
+	var f = $('form[name=replyWriteForm]');
+	var rep = $.trim($('input[name=reply_cont]').val());
+	
+	if(rep == ""){
+		alert('댓글 내용을 입력해 주세요!');
+		$('input[name=reply_cont]').focus();
+		return false;
+	}
+	
+
+	var csrf_token = $('input[name=csrf_t_name]').val();
+
+	$.ajax({
+		type: "POST",
+		url: '/reply/add',
+		dataType : "json",
+		data:{csrf_t_name:csrf_token, cidx: cidx, rep:rep},
+		success: function(response) {
+			if(response.RESULT == 'OK'){
+				$('input[name=reply_cont]').val('');
+				
+				$('#replyList').prepend('<li><span class="replyName">'+response.NAME+'</span><span class="replyMemo">'+rep+'</span></li>');
+			}else{
+				alert(response.MSG);
+			}
+		}
+	});
+	
+	return false;
+}
 
 // 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');

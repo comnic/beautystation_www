@@ -13,4 +13,21 @@ class Product extends MH_Controller {
 		$this->_segment = $this->uri->segment_array();
 	}
 	
+	function lists(){
+		$this->_header();
+
+			echo("상품 리스트");
+		$this->_footer();
+		
+	}
+	
+	function view(){
+		$this->_header();
+	
+		$this->load->view('product/view');
+		
+		$this->_footer();
+	
+	}
+	
 }

@@ -19,7 +19,7 @@ class Content_model extends CI_Model{
 		$total_record = $this->db->count_all_results();
 		
 		//컨텐츠 리스트를 구한다.
-		$this->db->select('c_idx as idx, cc_idx as channel_idx, cc_title as channel_title, c_kind as kind, c_title as title, c_count as cnt, c_img as img')
+		$this->db->select('c_idx as idx, cc_idx as channel_idx, cc_title as channel_title, c_kind as kind, c_title as title, c_count as cnt, c_img as img, c_movie_link as movie_id')
 			->from('contents')
 			->join('content_channel', 'contents.cc_idx = content_channel.idx')
 			->where($sqlWhere, NULL, FALSE)
@@ -30,7 +30,7 @@ class Content_model extends CI_Model{
 
 		return array("items"=>$query->result_array(), "total"=>$total_record);
 	}
-	
+			
 	function getContent($idx){
 		if(!isset($idx) || $idx == "")
 			return false;

@@ -33,12 +33,13 @@
 	#contentsDesc #contentDesc {font-size: 9pt;}
 	
 	#contentEval {margin-top: 20px;}
-	#contentEval #contentsEvalGroup label {background-color: #9d9d9d; color: #fff;}
+	#contentEval #contentsEvalGroup label {background-color: #9d9d9d; color: #fff; height: 50px;}
 	#contentEval #contentsEvalGroup .btn-default:hover {background-color: #ea0465;}
-		#contentEval #contentsEvalGroup .btn-default.active {background-color: #ea0465;}
+	#contentEval #contentsEvalGroup .btn-default.active {background-color: #ea0465;}
 	
 	#RPList li{padding:2px; float:left;width:70px;height:70px;overflow:hidden;cursor:pointer;}
 	#RPList li .cover{display:none;position:relative;z-index:10000;top:-70px;width:70px; height:70px;background-image:url(../../images/relative_product_cover.png);opacity:0.7;font-size:9px;color:#fff;text-align:center;padding-top:10px;}
+	#RPList li .cover a{color:#fff;}
 
 	#tagContent {max-height: 215px; overflow: auto; font-size: 9pt;}
 	#tagList li{margin: 1px 2px;padding:3px;color:rgb(237,55,132);float:left;border:1px solid rgb(237,55,132);}
@@ -68,4 +69,5 @@
 	#replyListLayer .replyName {font-weight: bold; color: #ea0465; margin-right: 10px;}
 	#replyListLayer .replyMemo {font-size: 10pt;}
 	#replyListLayer .replyRegTime {margin-left: 20px; font-size: 9pt;}
+	#replyListLayer #btnReplyMore {background-color: #fff; border: 1px solid #9d9d9d; margin-top: 20px;}
 }

@@ -81,7 +81,7 @@ var ch = '<?=$ch?>';
 					</ul>
 				</div>
 				<div id="btnMoreLayer" class="col-md-12 text-center">
-					<img id="btnMore" src="/static/images/content/list/btn_more.png">
+					<img id="btnMore" src="/static/images/common/btn_more.png">
 				</div>
 			</div><!-- list layer -->
 			

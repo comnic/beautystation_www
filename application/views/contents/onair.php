@@ -67,16 +67,16 @@ var movie_id = '<?php echo($data['movie_link']);?>';
 								<p class="title">평가하기</p>
 								<div>
 									<div id="contentsEvalGroup" class="col-md-12 btn-group btn-group-justified" data-toggle="buttons">
-									  <label class=" btn btn-default" style="height: 70px;">
+									  <label class=" btn btn-default <?php if($data['content_eval'] == 4) echo("active");?>" data-no="4">
 									    <input type="radio" name="cont_eval" id="cont_eval1" value="4" autocomplete="off" > 베스트!
 									  </label>
-									  <label class=" btn btn-default">
+									  <label class=" btn btn-default <?php if($data['content_eval'] == 3) echo("active");?>" data-no="3">
 									    <input type="radio" name="cont_eval" id="cont_eval2" value="3" autocomplete="off"> 또볼래요!
 									  </label>
-									  <label class=" btn btn-default">
+									  <label class=" btn btn-default <?php if($data['content_eval'] == 2) echo("active");?>" data-no="2">
 									    <input type="radio" name="cont_eval" id="cont_eval3" value="2" autocomplete="off"> 유용해요!
 									  </label>
-									  <label class=" btn btn-default">
+									  <label class=" btn btn-default <?php if($data['content_eval'] == 1) echo("active");?>" data-no="1">
 									    <input type="radio" name="cont_eval" id="cont_eval4" value="1" autocomplete="off"> 괜찮네요!
 									  </label>
 									 </div>
@@ -206,7 +206,7 @@ foreach($data['relative_contents']['items'] as $item){
 					
 					<div class="col-md-12 hr"></div>
 					
-					<p class="title">댓글(<span class="replyCnt">2</span>)</p>
+					<p class="title">댓글(<span class="replyCnt"><?php echo($data['reply_total']);?></span>)</p>
 					<div id="replyWriteFormLayer" class="col-md-12">
 <?php echo form_open('/', 'name="replyWriteForm" onsubmit="return chkReplySubmit();"'); ?>
 						<div id="replyWriteProfilePhoto" class="col-md-1">
@@ -229,21 +229,10 @@ foreach($data['relative_contents']['items'] as $item){
 						</div>
 					</form>
 					</div>
-					<div id="replyListLayer" class="col-md-12">
+					<div id="replyListLayer" class="col-md-11">
 						<ul id="replyList">
-							<li>
-								<span class="replyName">melissa</span>
-								<span class="replyMemo">동해물과 백두산이 마르고 닳도록...</span>
-							</li>
-							<li>
-								<span class="replyName">melissa</span>
-								<span class="replyMemo">동해물과 백두산이 마르고 닳도록...</span>
-							</li>
-							<li>
-								<span class="replyName">melissa</span>
-								<span class="replyMemo">동해물과 백두산이 마르고 닳도록...</span>
-							</li>
 						</ul>
+						<button id="btnReplyMore" class="btn col-md-12">더 보기</button>
 					</div>
 				
 				</div><!-- Top Layer -->

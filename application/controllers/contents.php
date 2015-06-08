@@ -69,6 +69,18 @@ class Contents extends MH_Controller {
 		
 		$this->load->helper(array('form', 'url'));
 		$data['content'] = auto_link(nl2br($data['content']), 'both', TRUE);
+		
+		$this->load->model('evaluation_model');
+		$this->load->library('member');
+		$res = $this->evaluation_model->get('content', array('obj_idx' => $cidx, 'mb_idx' => $this->member->getIdx()));
+		if(count($res) > 0)
+			$eval = $res[0]['eval'];
+		else
+			$eval = 0;
+		$data['content_eval'] = $eval;
+		
+		$this->load->model('reply_model');
+		$data['reply_total'] = number_format($this->reply_model->getNumRows('content', array("c_idx" => $cidx)));
 	
 		$this->load->view('contents/onair', array('data' => $data));
 		

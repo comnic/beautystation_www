@@ -60,7 +60,13 @@ class MH_Model extends CI_Model {
 	/*
 	 * 
 	 */
-	function getNumRows() {
+	function getNumRows($params = "") {
+		if(is_array($params)){
+			$this->db->select('count(*) as total')->from($this->tablename)->where($params);
+			
+			$query = $this->db->get();
+		}
+		
 		return $this->db->count_all($this->tablename);
 	}
 

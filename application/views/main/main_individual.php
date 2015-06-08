@@ -298,7 +298,7 @@
 		<div class="col-md-4">
 			<div class="box box5 col-md-6">
 				<div class="con-product-sm">
-					<div class="pic thumbnail"<a href="/product/view/2">><img src="/static/images/product/1818bd54ca624cbf0e4a465335832da2.png" width="100%"></a></div>
+					<div class="pic thumbnail"<a href="/product/view/2"><img src="/static/images/product/1818bd54ca624cbf0e4a465335832da2.png" width="100%"></a></div>
 					<div class="desc">
 						<p class="brand"><a href="/brand/view/1">[마몽드]</a></p>
 						<p class="title"><a href="/product/view/2">젤리 블러셔</a></p>

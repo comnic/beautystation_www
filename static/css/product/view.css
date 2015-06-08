@@ -24,14 +24,50 @@
  @media (min-width: @screen-lg-min) {
 ********************************************************************************************/
 @media only screen and (min-width: 1200px) {
-	#basicInfo #myPhotoBox {width: 230px; height: 230px; margin: 40px auto; overflow:hidden;}
-	#basicInfo #myPhotoBox #myProfilePhoto {width: 230px; height: 230px;}
-	#basicInfo #myPhotoBox #myProfileCover {position: relative; top: -230px; width: 230px; height: 230px;}
 	
-	#detailInfo {height: 310px;padding-top: 140px;}
-	#detailInfo .title{font-weight: bold;}
-	#detailInfo #divider {width: 285px; height: 4px; margin: 50px 0 10px 0;  background-image: url(../../images/main/divider_line.png);}
-	#detailInfo #icons img {padding-right: 10px;}
+	#productImageLayer {}
+	#productDesc {padding: 0 20px;}
+	#productDesc #iconList {margin-top: 20px;}
+	#productDesc #iconList ul li {float: left; margin-left: 15px;}
+	#productDesc #basicInfo #brandTitle, #productDesc #basicInfo #brandTitle a {color: #ea0465; font-size: 9pt;}
+	#productDesc #basicInfo #productTitle {font-weight: bold;}
+	#productDesc #basicInfo #desc {height: 100px; overflow: hidden;}
 	
+	#productDesc #basicInfo #optionDesc .price {color: #ea0465;}
 	
+	#btnGrpLayer .btn-ranking {color: #ea0465; background-color: #fff; border: 1px solid #ea0465; }
+	#btnGrpLayer .btn-oder-link {color: #fff; background-color: #ea0465; border: 1px solid #ea0465;}
+	
+	#productEval {margin-top: 20px;}
+	#productEval #productEvalGroup label {background-color: #9d9d9d; color: #fff; height: 50px;}
+	#productEval #productEvalGroup .btn-default:hover {background-color: #ea0465;}
+	#productEval #productEvalGroup .btn-default.active {background-color: #ea0465;}
+	
+	#productAndOnairArea {padding-left: 10px;}
+	#RPList li{padding:2px; float:left;width:70px;height:70px;overflow:hidden;cursor:pointer;}
+	#RPList li .cover{display:none;position:relative;z-index:10000;top:-70px;width:70px; height:70px;background-image:url(../../images/relative_product_cover.png);opacity:0.7;font-size:9px;color:#fff;text-align:center;padding-top:10px;}
+	#RPList li .cover a{color:#fff;}
+	
+	#ROListWrap {height: 250px; overflow: auto;}
+	#ROList li { height: 65px; margin-top: 5px;}
+	#ROList .onair-thumbnail {width: 110px;}
+	#ROList .onair-desc {width: 100px;}
+	#ROList .channel-title {font-size: 9pt; font-weight: bold; color: #ea0465;}
+	#ROList .content-title {font-size: 8pt;}
+
+	.replyCnt {font-weight: bold; color: #ea0465;}
+	
+	#replyWriteFormLayer {}
+	#replyWriteFormLayer #replyWriteProfilePhoto {width: 70px; height: 70px; margin-left:20px; margin-right: 20px;}
+	#replyWriteFormLayer #replyWriteProfilePhoto #myProfileCover {position: relative; top: -70px; width: 70px; height: 70px;}
+	#replyWriteForm {margin-top: 5px; margin-left: 15px;}
+	#replyWriteForm input {border: 1px solid #ea0465; height: 50px;}
+	#replyWriteForm button {background-color: #000; height: 50px; border-radius: 0;color: #fff; font-size: 10pt;}
+	
+	#replyListLayer {}
+	#replyListLayer .replyName {font-weight: bold; color: #ea0465; margin-right: 10px;}
+	#replyListLayer .replyMemo {font-size: 10pt;}
+	#replyListLayer .replyRegTime {margin-left: 20px; font-size: 9pt;}
+	#replyListLayer #btnReplyMore {background-color: #fff; border: 1px solid #9d9d9d; margin-top: 20px;}
+
 }

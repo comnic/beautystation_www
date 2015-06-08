@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/********************************************************************************************
+ Medium devices (desktops, 768px and up) 
+ @media (min-width: @screen-md-min) {
+********************************************************************************************/
+@media only screen and (min-width: 768px) {
+
+	
+}
+
+/********************************************************************************************
+ Medium devices (desktops, 992px and up) 
+ @media (min-width: @screen-md-min) {
+********************************************************************************************/
+@media only screen and (min-width: 992px) {
+
+
+	
+}
+
+/********************************************************************************************
+ Large devices (large desktops, 1200px and up) 
+ @media (min-width: @screen-lg-min) {
+********************************************************************************************/
+@media only screen and (min-width: 1200px) {
+	
+	#brandImageLayer {}
+	#brandDesc {padding: 0 20px;}
+	#brandDesc #iconList {margin-top: 20px;}
+	#brandDesc #iconList ul li {float: left; margin-left: 15px;}
+	#brandDesc #basicInfo #brandTitle {color: #ea0465; font-size: 20pt; font-weight: bold;}
+	#brandDesc #basicInfo #desc {height: 100px; overflow: hidden;}
+		
+	#brandEval {margin-top: 20px;}
+	#brandEval #brandEvalGroup label {background-color: #9d9d9d; color: #fff; height: 50px;}
+	#brandEval #brandEvalGroup .btn-default:hover {background-color: #ea0465;}
+	#brandEval #brandEvalGroup .btn-default.active {background-color: #ea0465;}
+	
+	
+	#brandProductList li .product-desc .title {}
+	#brandProductList li .product-desc .price {font-size: 9pt;}
+	#brandProductList li .product-desc .btn-buy {background: #ea0465; color: #fff; padding-top: 0px; padding-bottom: 0px;}
+
+}

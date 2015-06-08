@@ -1,18 +1,44 @@
 // JavaScript Document
+var reply_page = 0;
 
 $(document).ready(function(e) {	
 	getRelativeProductList(cidx);
 	getTagList(cidx);
-	getReplyList(cidx);
+	getReplyList(cidx, true);
+	
+	$('#btnReplyMore').click(function(){
+		getReplyList(cidx, false);
+	});
+	
+	$('#contentsEvalGroup label').click(function(){
+		//console.log("value==>" + $(this).data('no'));
+		var eval = $(this).data('no');
+		$.ajax({
+			type: "GET",
+			url: '/evaluation/add/content/'+cidx+'/'+eval,
+			dataType : "json",
+			success: function(response) {
+				if(response.RESULT == 'OK'){
+					console.log('OK');
+				}else{
+					alert(response.MSG);
+				}
+			}
+		});
+		
+	});
 });
 
 /*
+ * 댓글 리스트를 가져와 출력한다.
+ * empty가 true이면 목록을 모두 비우고 추가한다.
  * 
  */
-function getReplyList(cidx){
-	$('#replyList').empty();
+function getReplyList(idx, empty){
+	if(empty)
+		$('#replyList').empty();
 	
-	$.getJSON("/reply/getList/"+cidx, function( data ){
+	$.getJSON("/reply/getList/content/"+idx+"/"+ ++reply_page, function( data ){	
 		if( data.length > 0 ){
 
 			$.each(data, function(idx, item){
@@ -26,7 +52,7 @@ function getReplyList(cidx){
 
 
 /*
- * 
+ * 태그 리스트를 가져와 출력한다.
  */
 function getTagList(cidx){
 	$("#tagList").empty();
@@ -49,7 +75,7 @@ function getTagList(cidx){
 }
 
 /*
- * 
+ * 관련 상품 목록을 가져와 출력한다.
  */
 function getRelativeProductList(cidx){
 
@@ -69,7 +95,7 @@ function getRelativeProductList(cidx){
 					<li data-pidx=\""+item.p_idx+"\">\
 						<div>\
 							<div><img src=\""+img+"\" width=\"70\" class=\"thumbnail\"></div>\
-							<div class=\"cover\"><p>"+item.p_name+"</p><p>\\"+number_format(item.p_price)+"원</p></div>\
+							<div class=\"cover\"><a href=\"/product/view/"+item.idx+"\"><p>"+item.p_name+"</p><p>\\"+number_format(item.p_price)+"원</p></a></div>\
 		        		</div>\
 	    	        </li>\
 				");
@@ -83,6 +109,9 @@ function getRelativeProductList(cidx){
 }
 
 
+/*
+ * 관련 상품 마우스 이벤트 리스너 추가
+ */
 $(document).on("mouseenter", "#RPList li", function(){
 	$('.cover', $(this)).show();
 	
@@ -93,6 +122,9 @@ $(document).on("mouseleave", "#RPList li", function(){
 	
 });	
 
+/*
+ * 댓글 추가 체크 및 전송.
+ */
 function chkReplySubmit(){
 	var f = $('form[name=replyWriteForm]');
 	var rep = $.trim($('input[name=reply_cont]').val());
@@ -124,6 +156,11 @@ function chkReplySubmit(){
 	
 	return false;
 }
+
+
+/*
+ * 유투브 플레이어 컨트롤을 위한 루틴.
+ */
 
 // 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');

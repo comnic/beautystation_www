@@ -51,56 +51,6 @@ var bidx = '<?php echo($brand_info['idx']);?>';
 						<div class="cont_price text-center">12,000원</div>
 						<div class="cont_buy_btn text-center center-block">BUY</div>
 					</li>
-					<li>
-						<div class="cont_img"><a href="/product/view/1"><img src="/static/images/product/77757815441f54b24e81402b35386c50.png" width="170" height="170" class="thumbnail"></a></div>
-						<div class="cont_brand text-center"><a href="/brand/view/1">[Dior]</a></div>
-						<div class="cont_title text-center"><a href="/product/view/1">예뻐져라 로션</a></div>
-						<div class="cont_price text-center">12,000원</div>
-						<div class="cont_buy_btn text-center center-block">BUY</div>
-					</li>
-					<li>
-						<div class="cont_img"><a href="/product/view/1"><img src="/static/images/product/87be969b8cce95fb7327f3eb69413025.png" width="170" height="170" class="thumbnail"></a></div>
-						<div class="cont_brand text-center"><a href="/brand/view/1">[Dior]</a></div>
-						<div class="cont_title text-center"><a href="/product/view/1">예뻐져라 로션</a></div>
-						<div class="cont_price text-center">12,000원</div>
-						<div class="cont_buy_btn text-center center-block">BUY</div>
-					</li>
-					<li>
-						<div class="cont_img"><a href="/product/view/1"><img src="/static/images/product/77757815441f54b24e81402b35386c50.png" width="170" height="170" class="thumbnail"></a></div>
-						<div class="cont_brand text-center"><a href="/brand/view/1">[Dior]</a></div>
-						<div class="cont_title text-center"><a href="/product/view/1">예뻐져라 로션</a></div>
-						<div class="cont_price text-center">12,000원</div>
-						<div class="cont_buy_btn text-center center-block">BUY</div>
-					</li>
-					<li>
-						<div class="cont_img"><a href="/product/view/1"><img src="/static/images/product/1818bd54ca624cbf0e4a465335832da2.png" width="170" height="170" class="thumbnail"></a></div>
-						<div class="cont_brand text-center"><a href="/brand/view/1">[Dior]</a></div>
-						<div class="cont_title text-center"><a href="/product/view/1">예뻐져라 로션</a></div>
-						<div class="cont_price text-center">12,000원</div>
-						<div class="cont_buy_btn text-center center-block">BUY</div>
-					</li>
-					<li>
-						<div class="cont_img"><a href="/product/view/1"><img src="/static/images/product/77757815441f54b24e81402b35386c50.png" width="170" height="170" class="thumbnail"></a></div>
-						<div class="cont_brand text-center"><a href="/brand/view/1">[Dior]</a></div>
-						<div class="cont_title text-center"><a href="/product/view/1">예뻐져라 로션</a></div>
-						<div class="cont_price text-center">12,000원</div>
-						<div class="cont_buy_btn text-center center-block">BUY</div>
-					</li>
-					<li>
-						<div class="cont_img"><a href="/product/view/1"><img src="/static/images/product/87be969b8cce95fb7327f3eb69413025.png" width="170" height="170" class="thumbnail"></a></div>
-						<div class="cont_brand text-center"><a href="/brand/view/1">[Dior]</a></div>
-						<div class="cont_title text-center"><a href="/product/view/1">예뻐져라 로션</a></div>
-						<div class="cont_price text-center">12,000원</div>
-						<div class="cont_buy_btn text-center center-block">BUY</div>
-					</li>
-					<li>
-						<div class="cont_img"><a href="/product/view/1"><img src="/static/images/product/1818bd54ca624cbf0e4a465335832da2.png" width="170" height="170" class="thumbnail"></a></div>
-						<div class="cont_brand text-center"><a href="/brand/view/1">[Dior]</a></div>
-						<div class="cont_title text-center"><a href="/product/view/1">예뻐져라 로션</a></div>
-						<div class="cont_price text-center">12,000원</div>
-						<div class="cont_buy_btn text-center center-block">BUY</div>
-					</li>
-
 				</ul>
 				<div class="col-md-12 text-center"><img id="btnMore" src="/static/images/common/btn_more.png"></div>
 			</div><!-- page body -->
